@@ -32,11 +32,11 @@ function proximaPagina(){
 	//Pega o elemento da imagem atual via JQuery
 	var idImagemSelecionada = $('#foto-modal').data().id_image;
 	//Verifica qual a posição do elemento pai em relação ao seu elemento pai. Isso determina o index da imagem na tela.
-	var posicaoImagemSelecionada = $('#'+idImagemSelecionada).closest('.col-xs-3').index();
-	var qtdImagens = $('.col-xs-3').length;
+	var posicaoImagemSelecionada = $('#'+idImagemSelecionada).closest('.col-sm-3').index();
+	var qtdImagens = $('.col-sm-3').length;
 	if (posicaoImagemSelecionada < (qtdImagens-1)) {
 		//Proxima imagem. O onclick chama a função abreModal
-		$('.col-xs-3 img').get(posicaoImagemSelecionada+1).click()
+		$('.col-sm-3 img').get(posicaoImagemSelecionada+1).click()
 	}
 }
 
@@ -44,9 +44,9 @@ function paginaAnterior(){
 	//Pega o elemento da imagem atual via JQuery
 	var idImagemSelecionada = $('#foto-modal').data().id_image;
 	//Verifica qual a posição do elemento pai em relação ao seu elemento pai. Isso determina o index da imagem na tela.
-	var posicaoImagemSelecionada = $('#'+idImagemSelecionada).closest('.col-xs-3').index();
+	var posicaoImagemSelecionada = $('#'+idImagemSelecionada).closest('.col-sm-3').index();
 	if (posicaoImagemSelecionada > 0) {
 		//Imagem anterior. O onclick chama a função abreModal
-		$('.col-xs-3 img').get(posicaoImagemSelecionada-1).click()
+		$('.col-sm-3 img').get(posicaoImagemSelecionada-1).click()
 	}
 }

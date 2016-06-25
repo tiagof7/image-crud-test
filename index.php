@@ -71,7 +71,7 @@
 		{	
 			extract($row);
 			?>
-			<div class="col-xs-3">
+			<div class="col-sm-3">
 				<p class="page-header"><?php echo $descricao; ?></p>
 				<img src="user_images/<?php echo $row['userPic']; ?>" class="img-rounded foto"  
 					width="200px" height="200px" 

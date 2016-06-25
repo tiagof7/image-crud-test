@@ -9,7 +9,7 @@
 #Implantação
 - Executar o script create_table.sql em uma base de dados MySQL
 - Abrir o arquivo dbconfig.php e informar qual o endereço IP do servidor MySQL, o nome da base de dados escolhida e o nome e senha do usuário.
-- Copiar todos os arquivos para seu servidor PHP e acessar a pasta max. Exemplo: http://localhost/max
+- Copiar todos os arquivos para seu servidor PHP e acessar a pasta da aplicação. Exemplo: http://localhost/max
 
 
 
